@@ -76,7 +76,11 @@ const Navbar = () => {
         </li>{" "}
       </Link>
 
-      <a className="hidden lg:block" href="/Mohammad_Ammar_Uddin_FullStackDeveloper.pdf" download={true}>
+      <a
+        className="hidden lg:block"
+        href="/Mohammad_Ammar_Uddin_FullStackDeveloper.pdf"
+        download={true}
+      >
         <button className="btn font-semibold hover:shadow-xl hover:shadow-[#00eeff] text-xl btn-outline border-[#00eeff] transition duration-1000 text-white  hover:bg-[#00eeff]">
           Resume
         </button>
@@ -84,7 +88,7 @@ const Navbar = () => {
     </>
   );
   return (
-    <div className="fixed top-0 z-10 w-full py-4  bg-base-100 shadow-lg  ">
+    <div className="!fixed !top-0 z-[1000] w-full py-4  bg-base-100 shadow-lg  ">
       <div className="flex justify-between max-w-6xl mx-auto">
         <div className="">
           <div className="dropdown ">

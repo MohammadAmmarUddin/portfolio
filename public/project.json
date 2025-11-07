@@ -2,9 +2,9 @@
   {
     "id": 1,
     "img": "safara.png",
-    "link1": "https://safara-85edf.web.app/",
-    "link2": "https://github.com/ammarcse50/safara/tree/main/safara-frontend",
-    "link3": "https://github.com/ammarcse50/safara/tree/main/safara-backend",
+    "link1": "https://safaraapp.netlify.app",
+    "link2": "https://github.com/akil-tajwar/safara/tree/main/safara-frontend",
+    "link3": "https://github.com/akil-tajwar/safara/tree/main/safara-backend",
     "title": "Safara Academy",
     "desc": "Full-Stack"
   },
@@ -12,27 +12,26 @@
     "id": 2,
     "img": "ems.png",
     "link1": "https://employee-management-sys2m.netlify.app",
-    "link2": "https://github.com/ammarcse50/ems-management/tree/master/client",
-    "link3": "https://github.com/ammarcse50/ems-management/tree/master/server",
+    "link2": "https://github.com/MohammadAmmarUddin/ems-management/tree/master/client",
+    "link3": "https://github.com/MohammadAmmarUddin/ems-management/tree/master/server",
     "title": "Employee Management System",
     "desc": "Full-Stack"
-
   },
   {
     "id": 3,
-    "img": "todo.png",
-    "link1": "https://foodparadise-9f663.web.app/",
-    "link2": "https://github.com/ammarcse50/foodparadise-client-payment",
-    "link3": "https://github.com/ammarcse50/foodparadise-server-payment",
+    "img": "food.png",
+    "link1": "https://foodparadiseok.netlify.app",
+    "link2": "https://github.com/MohammadAmmarUddin/FoodeParadise/tree/master/client",
+    "link3": "https://github.com/MohammadAmmarUddin/FoodeParadise/tree/master/server",
     "title": "Foodparadise Restaurant",
     "desc": "Full-Stack"
   },
   {
     "id": 4,
     "img": "mahad.png",
-    "link1": "https://mahad-al-hind.web.app/",
-    "link2": "https://github.com/ammarcse50/mahad-al-hind-client",
-    "link3": "https://github.com/ammarcse50/mahad-al-hind-server",
+    "link1": "https://mahad-al-hind.netlify.app",
+    "link2": "https://github.com/MohammadAmmarUddin/mahad-al-hind-remake/tree/master/client",
+    "link3": "https://github.com/MohammadAmmarUddin/mahad-al-hind-remake/tree/master/server",
     "title": "Mahad Al Hind",
     "desc": "Full-Stack"
   },
@@ -55,6 +54,4 @@
     "title": "Netflix Clone",
     "desc": "Frontend"
   }
-  
- 
 ]

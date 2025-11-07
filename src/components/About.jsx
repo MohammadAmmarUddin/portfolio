@@ -94,9 +94,9 @@ const About = () => {
         </div>
       </div>
 
-      <div className="flex justify-center">
+      <div className="flex justify-center mt-10">
         {" "}
-        <h2 className="font-bold xl:text-4xl pt-32 text-sky-500">Tech Stack</h2>
+        <h2 className="text-center text-4xl  font-semibold text-sky-500 ">Tech Stack</h2>
       </div>
       <div className="flex justify-center items-center ">
         <Tabs
