@@ -1,75 +1,64 @@
 import AOS from "aos";
 import { SlActionRedo } from "react-icons/sl";
 AOS.init();
+
 const Services = () => {
   return (
-    <div name="services" className="pt-32 p-4">
-      <h2 className="text-center text-4xl mb-10 font-semibold text-sky-500">
+    <div name="services" className="pt-32 p-4 relative">
+      {/* optional subtle gradient glow background */}
+      <div className="absolute inset-0  pointer-events-none"></div>
+
+      <h2 className="text-center text-4xl mb-10 font-semibold text-sky-500 drop-shadow-lg">
         My Services
       </h2>
+      <hr className="mb-6 border-[#00eeff]/30 w-1/2 mx-auto" />
 
-      <span>
-        <hr className="mb-6" />
-      </span>
-      <div className="lg:flex   p-3 lg:p-0   justify-between gap-3">
-        {" "}
+      <div className="lg:flex p-3 lg:p-0 justify-between gap-6 relative z-10">
+        {/* Frontend */}
         <div
           data-aos="fade-up-right"
           data-aos-duration="1000"
-          className="lg:w-1/2 mb-3 lg:mb-0  hover:outline hover:outline-[#00eeff] bg-gray-700 p-10 rounded-lg text-white space-y-2"
+          className="lg:w-1/2 mb-3 lg:mb-0 rounded-2xl backdrop-blur-md bg-white/10 hover:bg-white/20 border border-white/20 hover:border-[#00eeff]/50 shadow-[0_8px_32px_rgba(0,0,0,0.4)] p-10 text-white transition duration-500 ease-in-out transform hover:-translate-y-1 hover:shadow-[#00eeff]/30 space-y-2"
         >
-          <h2 className="text-xl md:text-3xl font-semibold mb-6 text-sky-500">
+          <h2 className="text-xl md:text-3xl font-semibold mb-6 text-sky-400">
             Frontend Services
           </h2>
-          <div className="">
-            <span className="flex items-start">
-              <SlActionRedo className="mr-2 mt-1 text-sky-500" />
-              Integrate third-party APIs (e.g., SMS) with Axios for seamless
-              communication.
-            </span>
-            <span className="flex items-start">
-              <SlActionRedo className="mr-2 mt-1  text-sky-500" />
-              Build responsive, interactive UIs with React and Next.js.
-            </span>
-            <span className="flex items-start">
-              <SlActionRedo className="mr-2 mt-1 text-sky-500" />
-              Optimize performance with TanstackQuery and efficient state
-              management.
-            </span>
-            <span className="flex items-start">
-              <SlActionRedo className="mr-2 mt-1 text-sky-500" />
-              Develop mobile-first, SEO-friendly apps using HTML, CSS, and
-              JavaScript.
-            </span>
+          <div className="space-y-2">
+            {[
+              "Integrate third-party APIs (e.g., SMS) with Axios for seamless communication.",
+              "Build responsive, interactive UIs with React and Next.js.",
+              "Optimize performance with TanstackQuery and efficient state management.",
+              "Develop mobile-first, SEO-friendly apps using HTML, CSS, and JavaScript.",
+            ].map((text, i) => (
+              <span key={i} className="flex items-start">
+                <SlActionRedo className="mr-2 mt-1 text-[#00eeff]" />
+                {text}
+              </span>
+            ))}
           </div>
         </div>
+
+        {/* Backend */}
         <div
           data-aos="fade-up-left"
           data-aos-duration="1000"
-          className="lg:w-1/2 h-full w-full  hover:outline hover:outline-[#00eeff] bg-gray-700 p-10 rounded-lg text-white space-y-2"
+          className="lg:w-1/2 rounded-2xl backdrop-blur-md bg-white/10 hover:bg-white/20 border border-white/20 hover:border-[#00eeff]/50 shadow-[0_8px_32px_rgba(0,0,0,0.4)] p-10 text-white transition duration-500 ease-in-out transform hover:-translate-y-1 hover:shadow-[#00eeff]/30 space-y-2"
         >
-          <h2 className="text-sky-500 text-xl md:text-3xl font-semibold mb-6">
+          <h2 className="text-xl md:text-3xl font-semibold mb-6 text-sky-400">
             Backend Services
           </h2>
-          <div className="">
-            <span className="flex items-start">
-              <SlActionRedo className="mr-2 mt-1 text-sky-500" />
-              Create scalable APIs and backend systems using Node.js,
-              Express.js, and MongoDB.
-            </span>
-            <span className="flex items-start">
-              <SlActionRedo className="mr-2 mt-1  text-sky-500" />
-              Design and manage databases with MySQL, MariaDB, and MongoDB.
-            </span>
-            <span className="flex items-start">
-              <SlActionRedo className="mr-2 mt-1 text-sky-500" />
-              Implement secure JWT authentication and role-based access control.
-            </span>
-            <span className="flex items-start">
-              <SlActionRedo className="mr-2 mt-1 text-sky-500" />
-              Deploy applications using Docker, CapRover, and cloud services
-              for continuous delivery.
-            </span>
+          <div className="space-y-2">
+            {[
+              "Create scalable APIs and backend systems using Node.js, Express.js, and MongoDB.",
+              "Design and manage databases with MySQL, MariaDB, and MongoDB.",
+              "Implement secure JWT authentication and role-based access control.",
+              "Deploy applications using Docker, CapRover, and cloud services for continuous delivery.",
+            ].map((text, i) => (
+              <span key={i} className="flex items-start">
+                <SlActionRedo className="mr-2 mt-1 text-[#00eeff]" />
+                {text}
+              </span>
+            ))}
           </div>
         </div>
       </div>
