@@ -2,60 +2,121 @@ import { SlActionRedo } from "react-icons/sl";
 
 const Experience = () => {
   return (
-    <div
-      name="experience"
+    <section
+      id="experience"
       className="relative py-20 bg-gradient-to-b from-black-900 to-black overflow-hidden"
     >
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-sky-500/30 rounded-full blur-3xl"></div>
+      {/* Soft background glow */}
+      <div className="pointer-events-none absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[360px] md:w-[520px] h-[360px] md:h-[520px] bg-sky-500/20 rounded-full blur-[120px]" />
 
-      <div className="relative z-10">
-        <h2 className="text-center text-4xl mb-10 font-semibold text-sky-400">
+      <div className="relative z-10 max-w-6xl mx-auto px-4">
+        <h2 className="text-center text-3xl md:text-4xl mb-12 font-semibold text-sky-400 tracking-wide">
           Experience
         </h2>
 
-        <div className="mx-auto md:w-9/12 bg-white/10 backdrop-blur-lg border border-white/20 shadow-xl p-10 rounded-2xl text-white">
-          <div className="md:flex items-center justify-between mb-4">
-            <h2 className="font-bold md:text-xl text-center">@Digital Lab</h2>
-            <p className="text-center text-gray-300">Chittagong, Bangladesh</p>
+        {/* ===== ScaleBridger ===== */}
+        <div className="mx-auto md:w-9/12 bg-white/10 backdrop-blur-xl border border-white/15 shadow-xl p-6 md:p-10 rounded-2xl text-white transition-all duration-300 md:hover:border-sky-400/40 md:hover:shadow-sky-500/10 mb-10">
+          {/* Company */}
+          <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-2 mb-4">
+            <h3 className="font-semibold text-lg md:text-xl text-center md:text-left">
+              @ScaleBridger
+            </h3>
+            <p className="text-center md:text-right text-gray-400 text-sm">
+              Austin, TX 78731, USA
+            </p>
           </div>
 
-          <div className="md:flex items-center justify-between mb-6">
-            <h2 className="md:text-xl italic text-center text-sky-300">
+          {/* Role */}
+          <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-2 mb-6">
+            <h4 className="italic text-sky-300 text-center md:text-left font-medium">
+              Junior Software Engineer
+            </h4>
+            <p className="text-center md:text-right text-gray-400 text-sm">
+              April 2025 – Present
+            </p>
+          </div>
+
+          {/* Points */}
+          <ul className="space-y-4 text-sm md:text-base leading-relaxed">
+            <li className="flex gap-3">
+              <SlActionRedo className="mt-1 text-sky-400 shrink-0" />
+              Built a production-grade OTA automation platform integrating
+              Airbnb, Booking.com, Guesty, and Avantio APIs for real-time sync of
+              reservations, availability, and pricing.
+            </li>
+
+            <li className="flex gap-3">
+              <SlActionRedo className="mt-1 text-sky-400 shrink-0" />
+              Developed scalable backend services with Express.js, MongoDB,
+              TypeORM, and Redis, improving background job reliability and
+              multi-channel data consistency.
+            </li>
+
+            <li className="flex gap-3">
+              <SlActionRedo className="mt-1 text-sky-400 shrink-0" />
+              Implemented secure authentication using Google OAuth, JWT, RBAC,
+              and built real-time SSR dashboards with Next.js and WebSockets.
+            </li>
+
+            <li className="flex gap-3">
+              <SlActionRedo className="mt-1 text-sky-400 shrink-0" />
+              Integrated Stripe & CCAvenue and automated SMS/email workflows
+              with Twilio and SendGrid.
+            </li>
+          </ul>
+        </div>
+
+        {/* ===== Digital Lab ===== */}
+        <div className="mx-auto md:w-9/12 bg-white/10 backdrop-blur-xl border border-white/15 shadow-xl p-6 md:p-10 rounded-2xl text-white transition-all duration-300 md:hover:border-sky-400/40 md:hover:shadow-sky-500/10">
+          {/* Company */}
+          <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-2 mb-4">
+            <h3 className="font-semibold text-lg md:text-xl text-center md:text-left">
+              @Digital Lab
+            </h3>
+            <p className="text-center md:text-right text-gray-400 text-sm">
+              Chittagong, Bangladesh
+            </p>
+          </div>
+
+          {/* Role */}
+          <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-2 mb-6">
+            <h4 className="italic text-sky-300 text-center md:text-left font-medium">
               Trainee Jr. Software Engineer
-            </h2>
-            <p className="text-center text-gray-400">
+            </h4>
+            <p className="text-center md:text-right text-gray-400 text-sm">
               January 2025 – March 2025
             </p>
           </div>
 
-          <div className="space-y-3">
-            <span className="flex items-start">
-              <SlActionRedo className="mr-2 mt-1 text-sky-400" />
-              Engineered scalable web apps with Next.js, Prisma, and Redis,
-              optimizing queries and caching for high performance.
-            </span>
+          {/* Points */}
+          <ul className="space-y-4 text-sm md:text-base leading-relaxed">
+            <li className="flex gap-3">
+              <SlActionRedo className="mt-1 text-sky-400 shrink-0" />
+              Engineered scalable apps with Next.js, Prisma, and Redis,
+              optimizing queries and caching.
+            </li>
 
-            <span className="flex items-start">
-              <SlActionRedo className="mr-2 mt-1 text-sky-400" />
-              Integrated SMS APIs and built an async SMS Scheduler with DB
-              locking, reducing message delivery conflicts by 90%.
-            </span>
+            <li className="flex gap-3">
+              <SlActionRedo className="mt-1 text-sky-400 shrink-0" />
+              Built an async SMS scheduler with DB locking, reducing conflicts
+              by 90%.
+            </li>
 
-            <span className="flex items-start">
-              <SlActionRedo className="mr-2 mt-1 text-sky-400" />
-              Gained deep expertise in RDBMS, focusing on transactions,
-              concurrency, and data integrity across full-stack applications.
-            </span>
+            <li className="flex gap-3">
+              <SlActionRedo className="mt-1 text-sky-400 shrink-0" />
+              Developed strong expertise in RDBMS, transactions, and data
+              integrity.
+            </li>
 
-            <span className="flex items-start">
-              <SlActionRedo className="mr-2 mt-1 text-sky-400" />
-              Deployed and maintained apps using Docker, CapRover, and
-              cloud/Linux environments, cutting deployment time by 50%.
-            </span>
-          </div>
+            <li className="flex gap-3">
+              <SlActionRedo className="mt-1 text-sky-400 shrink-0" />
+              Deployed apps using Docker, CapRover, and Linux servers, cutting
+              deployment time by 50%.
+            </li>
+          </ul>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

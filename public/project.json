@@ -2,11 +2,9 @@
   {
     "id": 1,
     "img": "safara.png",
-    "link1": "https://safaraapp.netlify.app",
-    "link2": "https://github.com/akil-tajwar/safara/tree/main/safara-frontend",
-    "link3": "https://github.com/akil-tajwar/safara/tree/main/safara-backend",
-    "title": "Safara Academy",
-    "desc": "Full-Stack"
+    "live": "https://safaralearningcenter.com",
+    "title": "Safara Learning Center",
+    "desc": "Production-grade Learning Management System (LMS) built and deployed with secure authentication, scalable architecture, and real-world user traffic."
   },
   {
     "id": 2,

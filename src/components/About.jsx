@@ -3,12 +3,11 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 import {
-  FaBootstrap,
+  FaAws,
   FaChrome,
   FaDocker,
   FaGithub,
   FaNode,
-  FaNodeJs,
   FaReact,
   FaRobot,
 } from "react-icons/fa";
@@ -21,20 +20,26 @@ import {
 import { RiNextjsFill } from "react-icons/ri";
 import { IoLogoFirebase, IoLogoVercel } from "react-icons/io5";
 import {
-
   SiDbeaver,
+  SiExpress,
   SiMariadb,
   SiMongodb,
   SiMysql,
   SiPostman,
   SiPrisma,
+  SiRedux,
 } from "react-icons/si";
-import { TbBrandJavascript, TbBrandVscode } from "react-icons/tb";
+import {
+  TbBrandJavascript,
+  TbBrandTypescript,
+  TbBrandVscode,
+  TbLambda,
+} from "react-icons/tb";
 import { FiFigma } from "react-icons/fi";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import "react-tabs/style/react-tabs.css";
 
-import { DiLinux } from "react-icons/di";
+import { DiLinux, DiMongodb, DiPostgresql } from "react-icons/di";
 AOS.init();
 const About = () => {
   return (
@@ -51,25 +56,27 @@ const About = () => {
           <h2 className="lg:text-3xl text-2xl pb-1 font-semibold text-white">
             Mohammad Ammar Uddin
           </h2>
-          <h4 className="lg:text-xl font-semi text-white">MERN DEVELOPER</h4>
+          <h4 className="lg:text-xl font-semi text-white">
+            Full-Stack Developer
+          </h4>
           <span>
             <hr className="pb-5" />
           </span>
           <p className="text-white md:text-left text-[15px] md:text-lg">
-            I'm a Junior Software Engineer with 3+ months of hands-on experience
-            in full-stack development. I'm proficient in C/C++, JavaScript,
-            TypeScript, Python, and a variety of modern web technologies. I’ve
-            worked in agile environments, contributing to debugging, building
-            new features, and optimizing APIs to enhance performance and
-            scalability. With a solid foundation in competitive
-            programming—having solved over 300 problems—I’ve sharpened my
-            analytical thinking and problem-solving skills. I'm a fast learner
+            I’m a Junior Software Engineer with over a year of hands-on
+            experience in full-stack development. I’m proficient in C/C++,
+            JavaScript, TypeScript, and Python, and experienced with modern web
+            technologies. I’ve worked in agile environments, contributing to
+            debugging, building new features, and optimizing APIs to improve
+            performance and scalability. With a strong foundation in competitive
+            programming—having solved over 300 problems—I’ve developed sharp
+            analytical thinking and problem-solving skills. I’m a fast learner
             with a growth mindset, always eager to take on new challenges and
             continuously improve. Passionate about building scalable,
-            high-performance systems, I’m enthusiastic about contributing to
-            impactful projects and collaborating with driven, like-minded
-            individuals. Let’s connect if you’d like to collaborate or discuss
-            exciting opportunities!
+            high-performance systems, I’m excited to contribute to impactful
+            projects and collaborate with driven, like-minded individuals. Feel
+            free to connect if you’d like to collaborate or discuss
+            opportunities.
           </p>
         </div>
 
@@ -90,13 +97,17 @@ const About = () => {
             <br />
             International Islamic University Chittagong
           </p>
-          <p className="flex justify-center md:justify-end text-white italic text-[15px] md:text-lg">2020-2025</p>
+          <p className="flex justify-center md:justify-end text-white italic text-[15px] md:text-lg">
+            2020-2025
+          </p>
         </div>
       </div>
 
       <div className="flex justify-center mt-10">
         {" "}
-        <h2 className="text-center text-4xl  font-semibold text-sky-500 ">Tech Stack</h2>
+        <h2 className="text-center text-4xl  font-semibold text-sky-500 ">
+          Tech Stack
+        </h2>
       </div>
       <div className="flex justify-center items-center ">
         <Tabs
@@ -143,11 +154,16 @@ const About = () => {
             </div>
             <div>
               {" "}
-              <IoLogoJavascript
+              <TbBrandTypescript
                 className="text-[#00eeef] animate-pulse"
                 size={50}
               />
-              <span className="font-semibold">ES6</span>
+              <span className="font-semibold">TypeScript</span>
+            </div>
+            <div>
+              {" "}
+              <SiRedux className="text-[#00eeef] animate-pulse" size={50} />
+              <span className="font-semibold">Redux</span>
             </div>
             <div>
               {" "}
@@ -166,8 +182,41 @@ const About = () => {
           <TabPanel className={"flex flex-wrap gap-x-5"}>
             <div>
               {" "}
+              <FaNode className="text-[#00eeef] animate-pulse" size={50} />
+              <span className=" font-semibold ">NodeJS</span>
+            </div>
+            <div>
+              {" "}
+              <SiExpress className="text-[#00eeef] animate-pulse" size={50} />
+              <span className=" font-semibold ">Express</span>
+            </div>
+            <div>
+              {" "}
+              <DiMongodb className="text-[#00eeef] animate-pulse" size={50} />
+              <span className=" font-semibold ">MongoDB</span>
+            </div>
+            <div>
+              {" "}
+              <DiPostgresql
+                className="text-[#00eeef] animate-pulse"
+                size={50}
+              />
+              <span className=" font-semibold ">Postgre</span>
+            </div>
+            <div>
+              {" "}
               <SiMysql className="text-[#00eeef] animate-pulse" size={50} />
               <span className=" font-semibold">Mysql</span>
+            </div>
+            <div>
+              {" "}
+              <FaAws size={40} className="animate-pulse text-[#00eeef] " />
+              <span>AWS</span>
+            </div>
+            <div>
+              {" "}
+              <TbLambda size={40} className="animate-pulse text-[#00eeef] " />
+              <span>Lambda</span>
             </div>
             <div>
               {" "}
@@ -184,13 +233,8 @@ const About = () => {
             </div>
             <div>
               {" "}
-              <SiMongodb className="text-[#00eeef] animate-pulse" size={50} />
-              <span className=" font-semibold">MongoDB</span>
-            </div>
-            <div>
-              {" "}
-              <FaNode className="text-[#00eeef] animate-pulse" size={50} />
-              <span className=" font-semibold ">NodeJS</span>
+              <SiMariadb size={40} className="animate-pulse text-[#00eeef] " />
+              <span>MariaDB</span>
             </div>
           </TabPanel>
           <TabPanel className={"flex gap-x-5 flex-wrap"}>
@@ -201,9 +245,10 @@ const About = () => {
             </div>
             <div>
               {" "}
-              <SiMariadb size={40} className="animate-pulse text-[#00eeef] " />
-              <span>MariaDB</span>
+              <FaDocker size={40} className="animate-pulse text-[#00eeef] " />
+              <span>Docker</span>
             </div>
+
             <div>
               {" "}
               <SiDbeaver size={40} className="animate-pulse text-[#00eeef] " />
@@ -217,48 +262,17 @@ const About = () => {
               />
               <span>Vercel</span>
             </div>
-            <div>
-              {" "}
-              <FaDocker size={40} className="animate-pulse text-[#00eeef] " />
-              <span>Docker</span>
-            </div>
-            <div>
-              {" "}
-              <TbBrandVscode
-                size={40}
-                className="animate-pulse text-[#00eeef] "
-              />
-              <span>VS Code</span>
-            </div>
-            <div>
-              {" "}
-              <FaChrome size={40} className="animate-pulse text-[#00eeef] " />
-              <span>Chrome</span>
-            </div>
+
             <div>
               {" "}
               <FaGithub size={40} className="animate-pulse text-[#00eeef] " />
               <span>Github</span>
             </div>
-            <div>
-              {" "}
-              <FiFigma size={40} className="animate-pulse text-[#00eeef] " />
-              <span>Figma</span>
-            </div>
-            <div>
-              {" "}
-              <IoLogoNpm size={40} className="animate-pulse text-[#00eeef] " />
-              <span>NPM</span>
-            </div>
+
             <div>
               {" "}
               <SiPostman size={40} className="animate-pulse text-[#00eeef] " />
               <span>Postman</span>
-            </div>
-            <div>
-              {" "}
-              <FaRobot size={40} className="animate-pulse text-[#00eeef] " />
-              <span>Ai</span>
             </div>
 
             <div>
@@ -277,8 +291,6 @@ const About = () => {
           </TabPanel>
         </Tabs>
       </div>
-
-   
     </div>
   );
 };

@@ -27,14 +27,16 @@ const Portfolio = () => {
         ))}
       </div>
 
-     { visibleCount < portfolios.length && <div className="flex justify-center">
-        <button
-          onClick={loadMore}
-          className="btn font-semibold  hover:shadow-xl hover:shadow-[#00eeff] text-xl btn-outline border-[#00eeff] transition duration-1000 text-white  hover:bg-[#00eeff]"
-        >
-          Load More
-        </button>
-      </div>}
+      {visibleCount < portfolios.length && (
+        <div className="flex justify-center">
+          <button
+            onClick={loadMore}
+            className="btn font-semibold  hover:shadow-xl hover:shadow-[#00eeff] text-xl btn-outline border-[#00eeff] transition duration-1000 text-white  hover:bg-[#00eeff]"
+          >
+            Load More
+          </button>
+        </div>
+      )}
     </div>
   );
 };
