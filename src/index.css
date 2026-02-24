@@ -6,19 +6,19 @@
 
 html {
   font-family: "Saira", sans-serif;
-  overflow-x: hidden;         /* Stop horizontal scroll */
-  overscroll-behavior: none;  /* Disable bounce / refresh / 
-  scroll-behavior: smooth;    /* Optional: for smoother scrolling */
+  overflow-x: hidden; /* ✅ ok */
+  scroll-behavior: smooth; /* ✅ ok */
 }
-body{
-  overscroll-behavior: none;
-  overflow-x:hidden;
-  overflow-y:hidden
+
+body {
+  overflow-x: hidden; /* ✅ keep */
+  overflow-y: auto; /* ✅ FIXED */
 }
+
 /* Webkit scrollbar styling */
 ::-webkit-scrollbar {
   width: 8px;
-  height: 0; /* Prevent horizontal scrollbar space */
+  height: 0;
 }
 
 ::-webkit-scrollbar-track {

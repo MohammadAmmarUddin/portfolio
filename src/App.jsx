@@ -1,4 +1,4 @@
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
 
 import Header from "./components/Header";
 import Navbar from "./components/Navbar";
@@ -10,45 +10,59 @@ import Contact from "./components/Contact";
 import Experience from "./components/Experience";
 import WhatMadeMeUnique from "./components/WhatMadeMeUnique.jsx";
 import ScrollToTop from "react-scroll-to-top";
+import Publications from "./components/Publications.jsx";
 
-const Home = () => (
-  <>
-    <Header />
-    <About />
-    <Experience />
-    <Services />
-    <Portfolio />
-    <Contact />
-  </>
-);
-
-function App() {
+const Home = () => {
   return (
     <>
-      <Navbar />
+      <Header />
 
-      <div className="max-w-6xl mx-auto">
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/whatmademeunique" element={<WhatMadeMeUnique />} />
-        </Routes>
+      {/* Sections with controlled width */}
+      <div className="max-w-6xl mx-auto px-6">
+        <About />
+        <Experience />
+        <Services />
+        <Portfolio />
+        <Publications />
+        <Contact />
       </div>
-
-      <Footer />
-
-      <ScrollToTop
-        className="hidden lg:flex items-center justify-center"
-        color="black"
-        style={{
-          width: "50px",
-          height: "50px",
-          backgroundColor: "#00eeff",
-          borderRadius: "50%",
-          boxShadow: "0 0px 30px #00eeff",
-        }}
-        smooth
-      />
     </>
+  );
+};
+
+function App() {
+  const location = useLocation();
+  const isHomePage = location.pathname === "/";
+
+  return (
+    <div className="bg-[#060b1a] text-white min-h-screen overflow-x-hidden">
+      {/* Navbar only on Home */}
+      {isHomePage && <Navbar />}
+
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/whatmademeunique" element={<WhatMadeMeUnique />} />
+      </Routes>
+
+      {/* Footer only on Home */}
+      {isHomePage && <Footer />}
+
+      {/* Scroll To Top only on Home */}
+      {isHomePage && (
+        <ScrollToTop
+          className="hidden lg:flex items-center justify-center"
+          color="black"
+          smooth
+          style={{
+            width: "50px",
+            height: "50px",
+            backgroundColor: "#00eeff",
+            borderRadius: "50%",
+            boxShadow: "0 0 30px #00eeff",
+          }}
+        />
+      )}
+    </div>
   );
 }
 

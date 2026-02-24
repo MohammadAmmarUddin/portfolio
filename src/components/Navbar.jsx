@@ -55,7 +55,7 @@ const Navbar = () => {
         </Link>
       </li>
 
-      <li>
+      {/* <li>
         <Link
           to="services"
           spy
@@ -68,7 +68,7 @@ const Navbar = () => {
         >
           Services
         </Link>
-      </li>
+      </li> */}
 
       <li>
         <Link
@@ -82,6 +82,20 @@ const Navbar = () => {
           className="cursor-pointer text-2xl px-3 py-1"
         >
           Portfolio
+        </Link>
+      </li>
+      <li>
+        <Link
+          to="publications"
+          spy
+          smooth
+          offset={NAV_OFFSET}
+          duration={500}
+          onClick={closeMenu}
+          activeClass="bg-[#00eeff] text-black rounded-lg"
+          className="cursor-pointer text-2xl px-3 py-1"
+        >
+          Publication
         </Link>
       </li>
 

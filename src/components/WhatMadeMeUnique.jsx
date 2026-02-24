@@ -19,7 +19,7 @@ const WhatMadeMeUnique = () => {
 
       {/* Section Title */}
       <h2 className="text-3xl md:text-4xl font-extrabold text-center mb-12">
-        <span className="text-cyan-400">08.</span> What Made Me Unique
+        <span className="text-cyan-400"></span> What Made Me Unique
       </h2>
 
       <div className="max-w-5xl mx-auto space-y-10">
