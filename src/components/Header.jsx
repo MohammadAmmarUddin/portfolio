@@ -74,7 +74,7 @@ const Header = () => {
                 icon: FaFacebook,
                 link: "https://www.facebook.com/profile.php?id=61551789883517",
               },
-              { icon: FaGithub, link: "https://github.com/ammarcse50" },
+              { icon: FaGithub, link: "https://github.com/MohammadAmmarUddin" },
               {
                 icon: FaWhatsapp,
                 link: "https://api.whatsapp.com/send?phone=8801883128299",
