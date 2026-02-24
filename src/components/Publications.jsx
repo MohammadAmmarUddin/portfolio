@@ -2,7 +2,11 @@ import { FiExternalLink } from "react-icons/fi";
 
 const Publications = () => {
   return (
-    <section className="relative py-28 bg-[#060b1a] text-white overflow-hidden">
+    <section
+      name="publications"
+      id="publications"
+      className="relative py-28 bg-[#060b1a] text-white overflow-hidden"
+    >
       {/* Section Container */}
       <div className="max-w-6xl mx-auto px-6">
         {/* ================= TITLE ================= */}
