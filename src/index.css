@@ -15,6 +15,18 @@ body {
   overflow-y: auto; /* ✅ FIXED */
 }
 
+/* ===== Scroll Performance Optimizations ===== */
+section {
+  content-visibility: auto;
+  contain: paint;
+  contain-intrinsic-size: 1px 500px;
+}
+
+/* GPU-accelerate AOS animations */
+[data-aos] {
+  will-change: transform, opacity;
+}
+
 /* Webkit scrollbar styling */
 ::-webkit-scrollbar {
   width: 8px;

@@ -1,7 +1,4 @@
 import Swal from "sweetalert2";
-import AOS from "aos";
-import "aos/dist/aos.css";
-import { useEffect } from "react";
 import {
   FaGithub,
   FaLinkedin,
@@ -12,14 +9,6 @@ import {
 } from "react-icons/fa";
 
 const Contact = () => {
-  useEffect(() => {
-    AOS.init({
-      duration: 1000,
-      once: true,
-      easing: "ease-in-out",
-    });
-  }, []);
-
   const handleSubmitMessage = async (event) => {
     event.preventDefault();
     const formData = new FormData(event.target);
@@ -51,13 +40,10 @@ const Contact = () => {
       className="relative w-full py-24 md:py-32 overflow-visible bg-transparent"
       name="contact"
     >
-      {/* Background Ambient Glows (Matches Header) */}
       <div className="absolute top-1/4 right-0 w-72 h-72 bg-cyan-500/10 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute bottom-0 left-0 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl pointer-events-none" />
 
-      {/* ✅ CENTERED CONTAINER (Matches Header) */}
       <div className="max-w-6xl mx-auto px-6 relative z-10">
-        {/* Section Title */}
         <div className="mb-16" data-aos="fade-up">
           <h2 className="text-4xl md:text-5xl font-extrabold text-white mb-4">
             Contact <span className="text-cyan-400">Me</span>
@@ -66,7 +52,6 @@ const Contact = () => {
         </div>
 
         <div className="flex flex-col lg:flex-row gap-16 items-start">
-          {/* ================= LEFT CONTENT ================= */}
           <div data-aos="fade-right" className="lg:w-1/2 space-y-10">
             <div>
               <h3 className="text-white text-5xl md:text-6xl font-bold leading-tight">
@@ -81,7 +66,6 @@ const Contact = () => {
               </p>
             </div>
 
-            {/* Contact Cards */}
             <div className="space-y-6">
               <div className="flex items-center gap-6 group">
                 <div className="bg-cyan-400/10 p-4 rounded-2xl border border-cyan-400/20 text-cyan-400 group-hover:bg-cyan-400 group-hover:text-black transition-all duration-500">
@@ -112,7 +96,6 @@ const Contact = () => {
               </div>
             </div>
 
-            {/* Social Icons (Matches Header Style) */}
             <div className="flex gap-4 pt-4">
               {[
                 {
@@ -145,9 +128,7 @@ const Contact = () => {
             </div>
           </div>
 
-          {/* ================= RIGHT FORM ================= */}
           <div data-aos="fade-left" className="lg:w-1/2 w-full relative">
-            {/* The form box uses the same backdrop blur and dark background as the Header's experience card */}
             <div className="absolute -inset-1 bg-gradient-to-r from-cyan-400 to-purple-500 rounded-3xl blur opacity-20 group-hover:opacity-40 transition duration-1000"></div>
 
             <form

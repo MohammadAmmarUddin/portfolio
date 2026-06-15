@@ -1,6 +1,4 @@
 import { BiLogoNetlify, BiLogoTailwindCss } from "react-icons/bi";
-import AOS from "aos";
-import "aos/dist/aos.css";
 
 import {
   FaAws,
@@ -40,7 +38,6 @@ import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import "react-tabs/style/react-tabs.css";
 
 import { DiLinux, DiMongodb, DiPostgresql } from "react-icons/di";
-AOS.init();
 const About = () => {
   return (
     <div name="about" className="pt-32 mb-10">
@@ -128,26 +125,26 @@ const About = () => {
 
           <TabPanel className={"flex flex-wrap gap-x-5"}>
             <div data-aos="flip-left">
-              <IoLogoHtml5 className="text-[#00eeef] animate-pulse" size={50} />
+              <IoLogoHtml5 className="text-[#00eeef]" size={50} />
               <span className="pl-1 font-semibold">HTML</span>
             </div>
             <div className="">
               {" "}
               <BiLogoTailwindCss
-                className="text-[#00eeef] animate-pulse"
+                className="text-[#00eeef]"
                 size={50}
               />
               <span className="font-semibold">Tailwind CSS</span>
             </div>
             <div>
               {" "}
-              <IoLogoCss3 className="text-[#00eeef] animate-pulse" size={50} />
+              <IoLogoCss3 className="text-[#00eeef]" size={50} />
               <span className="pl-1 font-semibold ">CSS3</span>
             </div>
             <div>
               {" "}
               <TbBrandJavascript
-                className="text-[#00eeef] animate-pulse"
+                className="text-[#00eeef]"
                 size={50}
               />
               <span className="font-semibold">JavaScript</span>
@@ -155,25 +152,25 @@ const About = () => {
             <div>
               {" "}
               <TbBrandTypescript
-                className="text-[#00eeef] animate-pulse"
+                className="text-[#00eeef]"
                 size={50}
               />
               <span className="font-semibold">TypeScript</span>
             </div>
             <div>
               {" "}
-              <SiRedux className="text-[#00eeef] animate-pulse" size={50} />
+              <SiRedux className="text-[#00eeef]" size={50} />
               <span className="font-semibold">Redux</span>
             </div>
             <div>
               {" "}
-              <FaReact className="text-[#00eeef] animate-pulse" size={50} />
+              <FaReact className="text-[#00eeef]" size={50} />
               <span className=" font-semibold">ReactJS</span>
             </div>
             <div>
               {" "}
               <RiNextjsFill
-                className="text-[#00eeef] animate-pulse"
+                className="text-[#00eeef]"
                 size={50}
               />
               <span className=" font-semibold">NextJS</span>
@@ -182,96 +179,96 @@ const About = () => {
           <TabPanel className={"flex flex-wrap gap-x-5"}>
             <div>
               {" "}
-              <FaNode className="text-[#00eeef] animate-pulse" size={50} />
+              <FaNode className="text-[#00eeef]" size={50} />
               <span className=" font-semibold ">NodeJS</span>
             </div>
             <div>
               {" "}
-              <SiExpress className="text-[#00eeef] animate-pulse" size={50} />
+              <SiExpress className="text-[#00eeef]" size={50} />
               <span className=" font-semibold ">Express</span>
             </div>
             <div>
               {" "}
-              <DiMongodb className="text-[#00eeef] animate-pulse" size={50} />
+              <DiMongodb className="text-[#00eeef]" size={50} />
               <span className=" font-semibold ">MongoDB</span>
             </div>
             <div>
               {" "}
               <DiPostgresql
-                className="text-[#00eeef] animate-pulse"
+                className="text-[#00eeef]"
                 size={50}
               />
               <span className=" font-semibold ">Postgre</span>
             </div>
             <div>
               {" "}
-              <SiMysql className="text-[#00eeef] animate-pulse" size={50} />
+              <SiMysql className="text-[#00eeef]" size={50} />
               <span className=" font-semibold">Mysql</span>
             </div>
             <div>
               {" "}
-              <FaAws size={40} className="animate-pulse text-[#00eeef] " />
+              <FaAws size={40} className="text-[#00eeef]" />
               <span>AWS</span>
             </div>
             <div>
               {" "}
-              <TbLambda size={40} className="animate-pulse text-[#00eeef] " />
+              <TbLambda size={40} className="text-[#00eeef]" />
               <span>Lambda</span>
             </div>
             <div>
               {" "}
               <IoLogoFirebase
-                className="text-[#00eeef] animate-pulse"
+                className="text-[#00eeef]"
                 size={50}
               />
               <span className=" font-semibold">Firebase</span>
             </div>
             <div>
               {" "}
-              <SiPrisma className="text-[#00eeef] animate-pulse" size={50} />
+              <SiPrisma className="text-[#00eeef]" size={50} />
               <span className=" font-semibold">Prisma</span>
             </div>
             <div>
               {" "}
-              <SiMariadb size={40} className="animate-pulse text-[#00eeef] " />
+              <SiMariadb size={40} className="text-[#00eeef]" />
               <span>MariaDB</span>
             </div>
           </TabPanel>
           <TabPanel className={"flex gap-x-5 flex-wrap"}>
             <div>
               {" "}
-              <DiLinux className="animate-pulse text-[#00eeef]" size={50} />
+              <DiLinux className="text-[#00eeef]" size={50} />
               <span className=" font-semibold ">Linux</span>
             </div>
             <div>
               {" "}
-              <FaDocker size={40} className="animate-pulse text-[#00eeef] " />
+              <FaDocker size={40} className="text-[#00eeef]" />
               <span>Docker</span>
             </div>
 
             <div>
               {" "}
-              <SiDbeaver size={40} className="animate-pulse text-[#00eeef] " />
+              <SiDbeaver size={40} className="text-[#00eeef]" />
               <span>DBeaver</span>
             </div>
             <div>
               {" "}
               <IoLogoVercel
                 size={40}
-                className="animate-pulse text-[#00eeef] "
+                className="text-[#00eeef]"
               />
               <span>Vercel</span>
             </div>
 
             <div>
               {" "}
-              <FaGithub size={40} className="animate-pulse text-[#00eeef] " />
+              <FaGithub size={40} className="text-[#00eeef]" />
               <span>Github</span>
             </div>
 
             <div>
               {" "}
-              <SiPostman size={40} className="animate-pulse text-[#00eeef] " />
+              <SiPostman size={40} className="text-[#00eeef]" />
               <span>Postman</span>
             </div>
 
@@ -279,13 +276,13 @@ const About = () => {
               {" "}
               <BiLogoNetlify
                 size={40}
-                className="animate-pulse text-[#00eeef] "
+                className="text-[#00eeef]"
               />
               <span>Netlify</span>
             </div>
             <div>
               {" "}
-              <DiLinux size={40} className="animate-pulse text-[#00eeef] " />
+              <DiLinux size={40} className="text-[#00eeef]" />
               <span>Linux</span>
             </div>
           </TabPanel>

@@ -1,3 +1,6 @@
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import { Routes, Route, useLocation } from "react-router-dom";
 
 import Header from "./components/Header";
@@ -33,6 +36,14 @@ const Home = () => {
 function App() {
   const location = useLocation();
   const isHomePage = location.pathname === "/";
+
+  useEffect(() => {
+    AOS.init({
+      duration: 800,
+      once: true,
+      easing: "ease-in-out",
+    });
+  }, []);
 
   return (
     <div className="bg-[#060b1a] text-white min-h-screen overflow-x-hidden">

@@ -1,8 +1,3 @@
-import AOS from "aos";
-import "aos/dist/aos.css";
-
-AOS.init();
-
 const ProjectCard = ({ data }) => {
   const { img, title, desc, live, link1, link2, link3 } = data;
 
@@ -33,7 +28,7 @@ const ProjectCard = ({ data }) => {
         </div>
 
         {/* Buttons */}
-        <div className="flex justify-between flex-wrap gap-3 mt-4">
+        <div className="flex justify-between  gap-3 mt-4">
           {live && (
             <a href={live} target="_blank" rel="noreferrer">
               <button className="btn font-semibold hover:shadow-xl hover:shadow-[#00eeff] text-lg btn-outline border-[#00eeff] transition duration-700 text-white hover:bg-[#00eeff]">

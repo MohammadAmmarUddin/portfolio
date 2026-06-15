@@ -32,7 +32,7 @@ const Experience = () => {
               Junior Software Engineer
             </h4>
             <p className="text-center md:text-right text-gray-400 text-sm">
-              April 2025 – Present
+              April 2025 – DEC 2025
             </p>
           </div>
 
@@ -41,8 +41,8 @@ const Experience = () => {
             <li className="flex gap-3">
               <SlActionRedo className="mt-1 text-sky-400 shrink-0" />
               Built a production-grade OTA automation platform integrating
-              Airbnb, Booking.com, Guesty, and Avantio APIs for real-time sync of
-              reservations, availability, and pricing.
+              Airbnb, Booking.com, Guesty, and Avantio APIs for real-time sync
+              of reservations, availability, and pricing.
             </li>
 
             <li className="flex gap-3">

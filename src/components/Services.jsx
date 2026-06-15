@@ -1,7 +1,4 @@
-import { useEffect } from "react";
-import AOS from "aos";
 import { SlActionRedo } from "react-icons/sl";
-import "aos/dist/aos.css";
 
 const services = [
   {
@@ -41,10 +38,6 @@ const services = [
 ];
 
 const Services = () => {
-  useEffect(() => {
-    AOS.init({ duration: 800, once: true });
-  }, []);
-
   return (
     <section
       name="services"

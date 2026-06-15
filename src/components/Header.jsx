@@ -1,23 +1,8 @@
 import { FaFacebook, FaGithub, FaLinkedin, FaWhatsapp } from "react-icons/fa";
 import { TypeAnimation } from "react-type-animation";
-import AOS from "aos";
-import "aos/dist/aos.css";
-import { useEffect } from "react";
-import dp from "/ammar.png";
-
-// ✅ Correct links
+import dp from "../assets/linkedin.png";
 import { Link as RouterLink } from "react-router-dom";
-import { Link as ScrollLink } from "react-scroll";
-
 const Header = () => {
-  useEffect(() => {
-    AOS.init({
-      duration: 1000,
-      once: true,
-      easing: "ease-in-out",
-    });
-  }, []);
-
   return (
     <section
       id="home"

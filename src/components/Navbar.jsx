@@ -95,7 +95,7 @@ const Navbar = () => {
           activeClass="bg-[#00eeff] text-black rounded-lg"
           className="cursor-pointer text-2xl px-3 py-1"
         >
-          Publication
+          Publications
         </Link>
       </li>
 

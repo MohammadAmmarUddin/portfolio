@@ -10,12 +10,19 @@
   {
     "id": 2,
     "img": "safara.png",
-    "live": "https://safaralearningcenter.com",
+    "live": "https://safaralearningcenter.netlify.app",
     "title": "Safara Learning Center",
     "desc": "Production-grade Learning Management System (LMS) built and deployed with secure authentication, scalable architecture, and real-world user traffic."
   },
   {
     "id": 3,
+    "img": "seagull.png",
+    "live": "https://seagull-star-trading-l-l-c.vercel.app",
+    "title": "SEAGULL STAR TRADING L.L.C",
+    "desc": "Sea Star Fishing Equipment LLC (Dubai) a real fishing-related business dealing in fishing equipment and marine retail/trading. Sea Star Fishing Equipment LLC"
+  },
+  {
+    "id": 4,
     "img": "ems.png",
     "link1": "https://employee-management-sys2m.netlify.app",
     "link2": "https://github.com/MohammadAmmarUddin/ems-management/tree/master/client",
@@ -24,7 +31,7 @@
     "desc": "Full-Stack"
   },
   {
-    "id": 4,
+    "id": 5,
     "img": "food.png",
     "link1": "https://foodparadiseok.netlify.app",
     "link2": "https://github.com/MohammadAmmarUddin/FoodeParadise/tree/master/client",
@@ -33,7 +40,7 @@
     "desc": "Full-Stack"
   },
   {
-    "id": 5,
+    "id": 6,
     "img": "mahad.png",
     "link1": "https://mahad-al-hind.netlify.app",
     "link2": "https://github.com/MohammadAmmarUddin/mahad-al-hind-remake/tree/master/client",
@@ -42,7 +49,7 @@
     "desc": "Full-Stack"
   },
   {
-    "id": 6,
+    "id": 7,
     "img": "project2.png",
     "link1": "https://passstore-18383.web.app/",
     "link2": "https://github.com/ammarcse50/password-manager-client",
@@ -52,7 +59,7 @@
   },
 
   {
-    "id": 7,
+    "id": 8,
     "img": "netflix.png",
     "link1": "https://neflix-clone-firebase.netlify.app",
     "link2": "https://github.com/ammarcse50/netflix-clone",
