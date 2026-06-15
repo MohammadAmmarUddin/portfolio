@@ -6,7 +6,7 @@ const Header = () => {
   return (
     <section
       id="home"
-      className="relative pt-28 md:pt-36 mb-24 overflow-visible"
+      className="relative pt-28 md:pt-36 mb-24 overflow-x-hidden"
     >
       {/* Background Ambient Glows */}
       <div className="absolute -top-10 left-1/4 w-56 h-56 bg-cyan-500/30 rounded-full blur-3xl animate-pulse-slow pointer-events-none" />
@@ -99,14 +99,14 @@ const Header = () => {
           className="md:w-1/3 relative flex justify-center items-center mt-20 md:mt-0 overflow-visible"
         >
           {/* Outer Halo */}
-          <div className="absolute w-[420px] h-[420px] rounded-full bg-cyan-400/10 animate-halo" />
+          <div className="absolute w-[300px] h-[300px] md:w-[420px] md:h-[420px] rounded-full bg-cyan-400/10 animate-halo" />
 
           {/* Orbit Rings */}
-          <div className="absolute w-[380px] h-[380px] rounded-full border border-cyan-400/30 animate-spin-slow" />
-          <div className="absolute w-[330px] h-[330px] rounded-full border border-purple-500/30 animate-reverse-spin" />
+          <div className="absolute w-[270px] h-[270px] md:w-[380px] md:h-[380px] rounded-full border border-cyan-400/30 animate-spin-slow" />
+          <div className="absolute w-[230px] h-[230px] md:w-[330px] md:h-[330px] rounded-full border border-purple-500/30 animate-reverse-spin" />
 
           {/* Main Circular Frame */}
-          <div className="relative w-80 h-80 rounded-full p-2 bg-gradient-to-tr from-cyan-500/40 to-purple-500/30">
+          <div className="relative w-56 h-56 md:w-80 md:h-80 rounded-full p-2 bg-gradient-to-tr from-cyan-500/40 to-purple-500/30">
             {/* Inner Circle */}
             <div className="w-full h-full rounded-full overflow-hidden bg-[#0b1120]">
               <img
@@ -118,8 +118,8 @@ const Header = () => {
           </div>
 
           {/* EXPERIENCE CARD */}
-          <div className="absolute bottom-4 right-0 translate-x-6 bg-black/70 backdrop-blur-xl px-5 py-3 rounded-2xl border border-white/10 shadow-xl">
-            <p className="text-[10px] tracking-widest text-gray-400 uppercase">
+          <div className="absolute bottom-4 right-0 translate-x-3 md:translate-x-6 bg-black/70 backdrop-blur-xl px-5 py-3 rounded-2xl border border-white/10 shadow-xl">
+            <p className="text-xs md:text-[10px] tracking-widest text-gray-400 uppercase">
               Experience
             </p>
             <p className="text-cyan-400 text-lg font-semibold">1+ Years</p>

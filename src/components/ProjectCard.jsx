@@ -5,14 +5,14 @@ const ProjectCard = ({ data }) => {
     <div
       data-aos="fade-up"
       data-aos-duration="1000"
-      className="card card-compact border xl:p-3 bg-base-100 shadow-xl hover:shadow-lg hover:shadow-[#00eeff] flex flex-col h-full"
+      className="card card-compact border p-3 bg-base-100 shadow-xl hover:shadow-lg hover:shadow-[#00eeff] flex flex-col h-full"
     >
       {/* Image */}
       <figure>
         <img
           src={img}
           alt={title}
-          className="w-full h-[200px] object-cover rounded-lg"
+          className="w-full h-48 md:h-[200px] object-cover rounded-lg"
         />
       </figure>
 
@@ -28,7 +28,7 @@ const ProjectCard = ({ data }) => {
         </div>
 
         {/* Buttons */}
-        <div className="flex justify-between  gap-3 mt-4">
+        <div className="flex flex-wrap justify-between gap-3 mt-4">
           {live && (
             <a href={live} target="_blank" rel="noreferrer">
               <button className="btn font-semibold hover:shadow-xl hover:shadow-[#00eeff] text-lg btn-outline border-[#00eeff] transition duration-700 text-white hover:bg-[#00eeff]">

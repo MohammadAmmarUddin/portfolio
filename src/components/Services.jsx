@@ -71,7 +71,7 @@ const Services = () => {
             <div className="absolute inset-0 bg-gradient-to-b from-sky-500/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
 
             {/* Image */}
-            <div className="relative h-[240px] overflow-hidden">
+            <div className="relative h-48 md:h-[240px] overflow-hidden">
               <img
                 src={service.image}
                 alt={service.title}

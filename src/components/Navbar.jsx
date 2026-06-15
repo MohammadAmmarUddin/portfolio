@@ -1,12 +1,32 @@
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import { Link } from "react-scroll";
 
 const NAV_OFFSET = -90; // fixed navbar offset
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
+  const menuRef = useRef(null);
 
   const closeMenu = () => setOpen(false);
+
+  useEffect(() => {
+    const handleClickOutside = (e) => {
+      if (menuRef.current && !menuRef.current.contains(e.target)) {
+        setOpen(false);
+      }
+    };
+    const handleEscape = (e) => {
+      if (e.key === "Escape") setOpen(false);
+    };
+    if (open) {
+      document.addEventListener("mousedown", handleClickOutside);
+      document.addEventListener("keydown", handleEscape);
+    }
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+      document.removeEventListener("keydown", handleEscape);
+    };
+  }, [open]);
 
   const navlinks = (
     <>
@@ -19,7 +39,7 @@ const Navbar = () => {
           duration={500}
           onClick={closeMenu}
           activeClass="bg-[#00eeff] text-black rounded-lg"
-          className="cursor-pointer text-2xl px-3 py-1"
+          className="cursor-pointer text-lg md:text-2xl px-3 py-1"
         >
           Home
         </Link>
@@ -34,7 +54,7 @@ const Navbar = () => {
           duration={500}
           onClick={closeMenu}
           activeClass="bg-[#00eeff] text-black rounded-lg"
-          className="cursor-pointer text-2xl px-3 py-1"
+          className="cursor-pointer text-lg md:text-2xl px-3 py-1"
         >
           About Me
         </Link>
@@ -49,7 +69,7 @@ const Navbar = () => {
           duration={500}
           onClick={closeMenu}
           activeClass="bg-[#00eeff] text-black rounded-lg"
-          className="cursor-pointer text-2xl px-3 py-1"
+          className="cursor-pointer text-lg md:text-2xl px-3 py-1"
         >
           Experience
         </Link>
@@ -64,7 +84,7 @@ const Navbar = () => {
           duration={500}
           onClick={closeMenu}
           activeClass="bg-[#00eeff] text-black rounded-lg"
-          className="cursor-pointer text-2xl px-3 py-1"
+          className="cursor-pointer text-lg md:text-2xl px-3 py-1"
         >
           Services
         </Link>
@@ -79,7 +99,7 @@ const Navbar = () => {
           duration={500}
           onClick={closeMenu}
           activeClass="bg-[#00eeff] text-black rounded-lg"
-          className="cursor-pointer text-2xl px-3 py-1"
+          className="cursor-pointer text-lg md:text-2xl px-3 py-1"
         >
           Portfolio
         </Link>
@@ -93,7 +113,7 @@ const Navbar = () => {
           duration={500}
           onClick={closeMenu}
           activeClass="bg-[#00eeff] text-black rounded-lg"
-          className="cursor-pointer text-2xl px-3 py-1"
+          className="cursor-pointer text-lg md:text-2xl px-3 py-1"
         >
           Publications
         </Link>
@@ -108,13 +128,13 @@ const Navbar = () => {
           duration={500}
           onClick={closeMenu}
           activeClass="bg-[#00eeff] text-black rounded-lg"
-          className="cursor-pointer text-2xl px-3 py-1"
+          className="cursor-pointer text-lg md:text-2xl px-3 py-1"
         >
           Contact
         </Link>
       </li>
 
-      <li className="hidden lg:block ml-4">
+      <li className="lg:ml-4">
         <a
           href="/Mohammad_Ammar_Uddin_FullStackDeveloper.pdf"
           download
@@ -135,7 +155,7 @@ const Navbar = () => {
           smooth
           offset={NAV_OFFSET}
           duration={500}
-          className="px-3 text-5xl font-bold font-signature text-sky-500 cursor-pointer hover:text-[#00eeff] transition duration-700"
+          className="px-3 text-3xl md:text-5xl font-bold font-signature text-sky-500 cursor-pointer hover:text-[#00eeff] transition duration-700"
         >
           A<span className="text-white">mmar</span>
         </Link>
@@ -169,7 +189,7 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       {open && (
-        <ul className="lg:hidden absolute top-full left-4 right-4 mt-2 menu p-4 shadow bg-base-100 rounded-box z-[999]">
+        <ul ref={menuRef} className="lg:hidden absolute top-full left-4 right-4 mt-2 menu p-4 shadow bg-base-100 rounded-box z-[999]">
           {navlinks}
         </ul>
       )}

@@ -18,9 +18,9 @@ const Publications = () => {
         </div>
 
         {/* ================= PUBLICATION CARD ================= */}
-        <div className="relative bg-[#0b1120]/80 backdrop-blur-xl border border-white/10 rounded-3xl p-10 flex flex-col md:flex-row gap-10 hover:border-cyan-400/40 transition duration-500">
+        <div className="relative bg-[#0b1120]/80 backdrop-blur-xl border border-white/10 rounded-3xl p-6 md:p-10 flex flex-col md:flex-row gap-6 md:gap-10 hover:border-cyan-400/40 transition duration-500">
           {/* LEFT SIDE (Date + ID) */}
-          <div className="md:w-1/4 border-r border-white/5 pr-6">
+          <div className="md:w-1/4 md:border-r border-white/5 md:pr-6">
             <p className="text-xs tracking-widest text-gray-400 uppercase">
               Jan 2025
             </p>
